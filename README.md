@@ -10,7 +10,7 @@ Marketo Form Proxy enables forms to be submitted to Marketo while removing any t
 
 ### Server Installation ###
 
-0. Download this project, if you haven't already, here: `https://github.com/Marketo/Form-Proxy/downloads`
+0. Download this project, if you haven't already, here: https://github.com/Marketo/Form-Proxy/downloads
 1. Edit the variables in `mkto_proxy_config.template.php` as necessary
 2. Rename `mkto_proxy_config.template.php` to `mkto_proxy_config.php`
 3. Drop the entire directory onto your website (or subdomain), e.g. `http://YOUR-COMPANY.COM/post-proxy/` or `http://post-proxy.YOUR-COMPANY.COM/`
