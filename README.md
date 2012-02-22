@@ -1,5 +1,5 @@
-Marketo Form Proxy (v1.0)
-=========================
+Marketo Form Proxy (v1.1.0)
+===========================
 
 Marketo Form Proxy enables forms to be submitted to Marketo while removing any tracking information.  The most common example where this can be used is a customer referral landing page.
 
@@ -17,21 +17,7 @@ Marketo Form Proxy enables forms to be submitted to Marketo while removing any t
 
 ### Now, on each landing page... ###
 
-1. Enter the following into the `Custom HEAD HTML` (click `Landing Page Actions`, then `Edit Page Meta Tags`):
-
-    <script type="text/javascript">
-    (function($) {
-    
-        var ACTION_URL = 'http://YOUR-COMPANY.COM/post-proxy/';
-        
-        $(function(){
-            $('form')[0].reset();
-            $('form').attr('action',ACTION_URL+'?kill_mkt_trk=1').find('input[name=_mkt_trk]').val('WeLoveNathan');
-        });
-    
-    })(jQuery);
-    </script>
-
+1. Copy the text from `Custom-HEAD.html.txt` into the `Custom HEAD HTML` field in Marketo Design Studio (click `Landing Page Actions`, then `Edit Page Meta Tags`)
 2. Update that code. Replace `http://YOUR-COMPANY.COM/post-proxy/` with the URL to the directory you created in #3 above.
 3. Save your landing page and test throughly.
 
@@ -42,6 +28,7 @@ This script is open sourced under a modified BSD license (more on that below).  
 ### License ###
 
 Copyright (c) 2012 Marketo, Inc. - www.marketo.com
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
