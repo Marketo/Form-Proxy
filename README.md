@@ -22,12 +22,12 @@ Marketo Form Proxy enables forms to be submitted to Marketo while removing any t
     <script type="text/javascript">
     (function($) {
     
-       var ACTION_URL = 'http://YOUR-COMPANY.COM/post-proxy/';
-    
-       $(function(){
-          $('form')[0].reset();
-          $('form').attr('action',ACTION_URL+'?kill_mkt_trk=1').find('input[name=_mkt_trk]').val('WeLoveNathan');
-       });
+        var ACTION_URL = 'http://YOUR-COMPANY.COM/post-proxy/';
+        
+        $(function(){
+            $('form')[0].reset();
+            $('form').attr('action',ACTION_URL+'?kill_mkt_trk=1').find('input[name=_mkt_trk]').val('WeLoveNathan');
+        });
     
     })(jQuery);
     </script>
