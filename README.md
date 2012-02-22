@@ -10,6 +10,7 @@ Marketo Form Proxy enables forms to be submitted to Marketo while removing any t
 
 ### Server Installation ###
 
+0. Download this project, if you haven't already, here: `https://github.com/Marketo/Form-Proxy/downloads`
 1. Edit the variables in `mkto_proxy_config.template.php` as necessary
 2. Rename `mkto_proxy_config.template.php` to `mkto_proxy_config.php`
 3. Drop the entire directory onto your website (or subdomain), e.g. `http://YOUR-COMPANY.COM/post-proxy/` or `http://post-proxy.YOUR-COMPANY.COM/`
@@ -18,7 +19,7 @@ Marketo Form Proxy enables forms to be submitted to Marketo while removing any t
 ### Now, on each landing page... ###
 
 1. Copy the text from `Custom-HEAD.html.txt` into the `Custom HEAD HTML` field in Marketo Design Studio (click `Landing Page Actions`, then `Edit Page Meta Tags`)
-2. Update that code. Replace `http://YOUR-COMPANY.COM/post-proxy/` with the URL to the directory you created in #3 above.
+2. Update that code. Replace `http://YOUR-COMPANY.COM/post-proxy/` with the URL to the directory you created in the 3rd server installation step.
 3. Save your landing page and test throughly.
 
 ### Contributions ###
